@@ -36,15 +36,25 @@ print(i1 > i4)  # compare cash amount
 
 @ dataclass(order=True)
 class Investor2:
+    sort_index: float = field(repr=False, init=False)
     name: str
     age: int
-    cash: float = field(repr=False, default=0)
+    cash: float = field(repr=True, default=0)
+
+    def __post_init__(self):
+        self.sort_index = self.cash
 
 
-i5 = Investor2("John", 25, 10000)
-i6 = Investor2("Anna", 30)
-i7 = Investor2("John", 25, 9000)
+i5 = Investor2("John", 80, 80000)
+i6 = Investor2("Mike", 18, 4000)
+i7 = Investor2("Anna", 50, 1000)
+i8 = Investor2("Bob", 70, 70000)
+i9 = Investor2("Charles", 18, 3000)
+
 print(i5)
 print(i6)
-print(i5 == i7)  # compare classes
-print(i5 > i7)  # compare cash amount
+print(i5 < i6)  # compare cash amount
+
+mylist = [i5, i6, i7, i8, i9]
+mylist.sort(reverse=True)  # sort list by cash level in descending order
+print(mylist)
