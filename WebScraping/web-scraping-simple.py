@@ -3,11 +3,12 @@ import requests
 from bs4 import BeautifulSoup as bs
 
 # load the web page content
-r = requests.get("https://keithgalli.github.io/web-scraping/example.html")
+url = "https://keithgalli.github.io/web-scraping/example.html"
+
+page = requests.get(url=url)
 
 # conver the url content to a beautiful soup object
-soup = bs(r.content)
+soup = bs(page.content)
 
 # print the web content
 print(soup.prettify())
-
