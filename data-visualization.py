@@ -6,10 +6,22 @@ slices = [59219, 55466, 47544, 36443, 35917]
 labels = ['JavaScript', 'HTML/CSS', 'SQL', 'Python', 'Java']
 explode = [0, 0, 0, 0.1, 0]
 
+
+# Bar chart
+plt.figure(figsize=(10,5))
+plt.bar(labels, slices, color=['black', 'red', 'green', 'blue', 'cyan'])
+plt.title("Color Bar Chart")
+plt.xlabel("Programming Language")
+plt.ylabel("Market Share")
+plt.grid(axis='x')
+plt.tight_layout()
+plt.show()
+
+
+# Pie chart
 plt.pie(slices, labels=labels, explode=explode, shadow=True,
         startangle=90, autopct='%1.1f%%',
         wedgeprops={'edgecolor': 'black'})
-
 plt.title("My Awesome Pie Chart")
 plt.tight_layout()
 plt.show()
