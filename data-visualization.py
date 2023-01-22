@@ -9,7 +9,8 @@ explode = [0, 0, 0, 0.1, 0]
 
 # Bar chart
 plt.figure(figsize=(10,5))
-plt.bar(labels, slices, color=['black', 'red', 'green', 'blue', 'cyan'])
+plt.bar(labels, slices, width=0.3, 
+        color=['black', 'red', 'green', 'blue', 'cyan'])
 plt.title("Color Bar Chart")
 plt.xlabel("Programming Language")
 plt.ylabel("Market Share")
