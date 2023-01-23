@@ -1,4 +1,4 @@
-# AutomatingExcelDashboard
+# Automating Excel Dashboard
 
 <b>Steps to Execute:</b>
 
