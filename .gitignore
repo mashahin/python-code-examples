@@ -1,3 +1,5 @@
 .vs/
+_pycache_/
 *.csv
 *.db
+*checkpoints
