@@ -1,5 +1,6 @@
 .vs/
-_pycache_/
+*_pycache_/
+*cython*
 *.csv
 *.db
 *checkpoints
