@@ -9,5 +9,6 @@ There is a really nice use case for the __name__ variable, whether you want a fi
 
 We can use an if __name__ == "__main__" block to allow or prevent parts of code from being run when the modules are imported.
 
-(**References:**)
+**References:**
+
 [Python if __name__ == __main__ Explained with Code Examples](https://www.freecodecamp.org/news/if-name-main-python-example/)
