@@ -1,6 +1,7 @@
 from random import randint
 from timeit import repeat
-from bubble_sort import *
+from bubble_sort import bubblesort
+from quick_sort import quicksort
 
 def run_sorting_algorithm(algorithm, array):
     # Set up the context and prepare the call to the specified
@@ -30,4 +31,5 @@ if __name__ == "__main__":
     # Call the function using the name of the sorting algorithm
     # and the array you just created
     run_sorting_algorithm(algorithm="sorted", array=array)
-    run_sorting_algorithm(algorithm="bubble_sort", array=array)
+    run_sorting_algorithm(algorithm="bubblesort", array=array)
+    run_sorting_algorithm(algorithm="quicksort", array=array)
