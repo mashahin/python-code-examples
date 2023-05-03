@@ -3,7 +3,8 @@ from timeit import repeat
 from bubble_sort import bubblesort
 from quick_sort import quicksort
 from insertion_sort import insertion_sort
-from merge_sort import *
+from merge_sort import merge_sort
+from timsort import timsort
 
 def run_sorting_algorithm(algorithm, array):
     # Set up the context and prepare the call to the specified
@@ -38,3 +39,4 @@ if __name__ == "__main__":
     run_sorting_algorithm(algorithm="quicksort", array=array)
     run_sorting_algorithm(algorithm="insertion_sort", array=array)
     run_sorting_algorithm(algorithm="merge_sort", array=array)
+    run_sorting_algorithm(algorithm="timsort", array=array)
